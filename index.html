@@ -1,0 +1,795 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#c41230">
+  <meta name="description" content="Nde Dilan for CMU-Africa Data Science Club Strategist. Community leadership, published NLP research, and product-building experience behind a practical plan for technical depth, competition preparation, and African impact.">
+  <meta property="og:title" content="Nde Dilan for Strategist | CMU-Africa Data Science Club">
+  <meta property="og:description" content="From computational foundations to African impact. Meet Nde Hurich Dilan and explore four priorities for the CMU-Africa Data Science Club, 2026–2027.">
+  <meta property="og:type" content="website">
+  <title>Nde Dilan | Data Science Club Strategist Manifesto</title>
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' fill='%23c41230'/%3E%3Cpath d='M17 45V31h7v14zm12 0V22h7v23zm12 0V12h7v33z' fill='white'/%3E%3C/svg%3E">
+  <style>
+    :root {
+      --red: #c41230;
+      --red-dark: #a20e27;
+      --ink: #171717;
+      --muted: #626264;
+      --line: #dededc;
+      --paper: #f5f5f2;
+      --white: #fff;
+      --page-width: 1240px;
+      --gutter: clamp(22px, 5vw, 76px);
+      --font: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    }
+    *, *::before, *::after { box-sizing: border-box; }
+    html { scroll-behavior: smooth; scroll-padding-top: 112px; }
+    body { margin: 0; background: var(--white); color: var(--ink); font: 16px/1.6 var(--font); -webkit-font-smoothing: antialiased; }
+    button, a { -webkit-tap-highlight-color: transparent; }
+    button { font: inherit; }
+    a { color: inherit; text-decoration-thickness: 1px; text-underline-offset: 4px; }
+    button, summary { cursor: pointer; }
+    button:focus-visible, a:focus-visible, summary:focus-visible, [tabindex="0"]:focus-visible { outline: 3px solid var(--red); outline-offset: 5px; }
+    h1, h2, h3, p { margin: 0; }
+    h1, h2, h3 { line-height: 1.08; }
+    svg { display: block; }
+    ::selection { background: var(--red); color: var(--white); }
+    .wrap { width: min(var(--page-width), calc(100% - var(--gutter) * 2)); margin-inline: auto; }
+    .skip-link { position: fixed; top: 12px; left: 12px; z-index: 100; padding: 10px 18px; color: var(--white); background: var(--ink); transform: translateY(-160%); }
+    .skip-link:focus { transform: translateY(0); }
+    .eyebrow { font-size: 10px; font-weight: 700; line-height: 1.5; letter-spacing: .15em; text-transform: uppercase; }
+    .red { color: var(--red); }
+    .arrow { width: 18px; height: 18px; flex-shrink: 0; }
+    .masthead { position: sticky; top: 0; z-index: 20; border-top: 5px solid var(--red); border-bottom: 1px solid var(--line); background: var(--white); }
+    .masthead-inner { position: relative; display: flex; align-items: center; justify-content: space-between; min-height: 88px; gap: 30px; }
+    .brand { display: flex; gap: 19px; align-items: center; text-decoration: none; }
+    .brand-name { font-size: 18px; font-weight: 800; letter-spacing: -.055em; line-height: 1.12; }
+    .brand-name span { display: block; }
+    .brand-club { border-left: 1px solid #bdbdbb; padding-left: 19px; font-size: 10px; font-weight: 700; letter-spacing: .11em; line-height: 1.65; text-transform: uppercase; }
+    .brand-club span { display: block; }
+    .main-nav { display: flex; align-items: center; gap: 29px; }
+    .main-nav a { position: relative; padding-block: 10px; font-size: 12px; font-weight: 600; text-decoration: none; }
+    .main-nav a::after { position: absolute; right: 0; bottom: 4px; left: 0; height: 2px; background: var(--red); content: ""; transform: scaleX(0); transform-origin: left; transition: transform .2s; }
+    .main-nav a:hover::after, .main-nav a[aria-current="location"]::after { transform: scaleX(1); }
+    .main-nav .nav-name { border-left: 1px solid var(--line); padding-left: 26px; color: var(--red); }
+    .menu-toggle { display: none; align-items: center; gap: 10px; border: 1px solid var(--line); padding: 9px 12px; background: var(--white); color: var(--ink); font-size: 12px; }
+    .menu-toggle svg { width: 17px; height: 17px; }
+    .hero { padding: 48px 0 62px; }
+    .hero-meta { display: flex; flex-wrap: wrap; justify-content: space-between; gap: 12px 25px; padding-bottom: 33px; }
+    .hero-meta .term { color: var(--muted); font-size: 11px; letter-spacing: .035em; }
+    .hero-layout { display: grid; grid-template-columns: 1.45fr 1fr; align-items: stretch; gap: clamp(36px, 6vw, 92px); }
+    h1 { font-size: clamp(59px, 6.65vw, 96px); font-weight: 750; letter-spacing: -.071em; line-height: 1.01; }
+    h1 span { display: block; }
+    .hero-intro { max-width: 440px; margin-top: 26px; color: var(--muted); font-size: 17px; line-height: 1.65; }
+    .candidate { display: flex; align-items: center; gap: 13px; margin-top: 26px; }
+    .candidate-monogram { display: grid; width: 40px; height: 40px; place-items: center; border: 1px solid var(--line); color: var(--red); font-size: 12px; font-weight: 700; letter-spacing: -.04em; }
+    .candidate strong { display: block; font-size: 14px; line-height: 1.4; }
+    .candidate span { color: var(--muted); font-size: 11px; }
+    .candidate .candidate-credentials { display: block; margin-top: 3px; font-size: 10px; }
+    .hero-actions { display: flex; flex-wrap: wrap; align-items: center; gap: 20px; margin-top: 30px; }
+    .button { display: inline-flex; align-items: center; justify-content: center; gap: 20px; min-height: 47px; border: 1px solid var(--red); padding: 12px 19px; background: var(--red); color: var(--white); font-size: 12px; font-weight: 700; line-height: 1.5; text-decoration: none; transition: background .2s, border-color .2s; }
+    .button:hover { border-color: var(--red-dark); background: var(--red-dark); }
+    .text-link { display: inline-flex; align-items: center; gap: 12px; font-size: 12px; font-weight: 700; text-decoration: none; }
+    .text-link:hover { text-decoration: underline; }
+    .year-card { display: flex; flex-direction: column; align-self: stretch; margin-top: 5px; }
+    .year-card-top { position: relative; display: flex; flex: 1; min-height: 290px; flex-direction: column; justify-content: space-between; overflow: hidden; padding: 28px 30px 24px; background: var(--red); color: var(--white); }
+    .year-card-top::before { position: absolute; inset: 0; background-image: linear-gradient(#ffffff12 1px, transparent 1px), linear-gradient(90deg, #ffffff12 1px, transparent 1px); background-size: 36px 36px; content: ""; pointer-events: none; }
+    .year-card-label { position: relative; display: flex; align-items: center; justify-content: space-between; gap: 15px; }
+    .year-card-label .eyebrow { font-size: 9px; }
+    .year-marker { border: 1px solid #ffffff70; padding: 3px 7px; font-size: 10px; line-height: 1.4; }
+    .year-number { position: relative; margin: 0 0 -2px -8px; font-size: clamp(130px, 14vw, 197px); font-weight: 700; letter-spacing: -.09em; line-height: 1; }
+    .year-card-top h2 { position: relative; font-size: 25px; font-weight: 600; letter-spacing: -.04em; }
+    .year-card-top p { position: relative; margin-top: 8px; font-size: 12px; line-height: 1.5; }
+    .year-breakdown { display: grid; grid-template-columns: 1fr 1fr; border: 1px solid var(--line); border-top: 0; }
+    .year-breakdown div { display: flex; align-items: baseline; gap: 10px; padding: 15px 20px; }
+    .year-breakdown div:nth-child(odd) { border-right: 1px solid var(--line); }
+    .year-breakdown div:nth-child(-n+2) { border-bottom: 1px solid var(--line); }
+    .year-breakdown strong { min-width: 16px; font-size: 23px; font-weight: 500; line-height: 1; }
+    .year-breakdown span { font-size: 10px; color: var(--muted); }
+    .proof-bar { background: var(--paper); border-top: 1px solid var(--line); border-bottom: 1px solid var(--line); }
+    .proof-inner { display: grid; grid-template-columns: 1fr 1fr 1.2fr; }
+    .proof-item { display: flex; align-items: center; gap: 13px; padding: 21px 26px; border-right: 1px solid var(--line); }
+    .proof-item:first-child { padding-left: 0; }
+    .proof-item:last-child { padding-right: 0; border: 0; }
+    .proof-mark { display: grid; flex-shrink: 0; width: 26px; height: 26px; place-items: center; border: 1px solid #cccbca; color: var(--red); }
+    .proof-mark svg { width: 14px; height: 14px; }
+    .proof-item strong { display: block; font-size: 12px; line-height: 1.5; }
+    .proof-item p { color: var(--muted); font-size: 10px; line-height: 1.5; }
+    .proof-item a { display: inline-flex; align-items: center; gap: 8px; }
+    .section { padding-block: 78px; }
+    .section-label { display: flex; align-items: center; gap: 12px; margin-bottom: 25px; color: var(--muted); }
+    .section-label .index { color: var(--red); }
+    .section-label::after { width: 35px; height: 1px; background: var(--line); content: ""; }
+    .section-heading { font-size: clamp(31px, 3.5vw, 47px); font-weight: 650; letter-spacing: -.052em; line-height: 1.12; }
+    .section-intro { max-width: 480px; color: var(--muted); font-size: 14px; }
+    .manifesto-top { display: grid; grid-template-columns: 1fr 1fr; gap: 65px; align-items: start; }
+    .manifesto-copy p { color: #4d4d4e; font-size: 15px; }
+    .manifesto-copy p + p { margin-top: 17px; }
+    .manifesto-copy strong { color: var(--ink); font-weight: 650; }
+    .signature { display: flex; align-items: center; gap: 13px; margin-top: 24px; }
+    .signature-line { width: 32px; height: 2px; background: var(--red); }
+    .signature p { font-size: 12px; color: var(--ink); }
+    .signature span { color: var(--muted); }
+    .track-record { border-top: 1px solid var(--line); }
+    .record-stats { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); margin: 30px 0 34px; border-block: 1px solid var(--line); }
+    .record-stat { padding: 22px 28px; border-right: 1px solid var(--line); }
+    .record-stat:first-child { padding-left: 0; }
+    .record-stat:last-child { border-right: 0; }
+    .record-stat strong { display: block; color: var(--red); font-size: 48px; font-weight: 600; letter-spacing: -.06em; line-height: 1.15; }
+    .record-stat span { display: block; margin-top: 6px; color: var(--muted); font-size: 11px; }
+    .record-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 30px 48px; }
+    .record-entry { display: flex; flex-direction: column; border-top: 2px solid var(--ink); padding-top: 17px; }
+    .record-entry .eyebrow { color: var(--red); font-size: 9px; }
+    .record-entry h3 { margin-top: 11px; font-size: 24px; font-weight: 600; letter-spacing: -.04em; }
+    .record-entry > p:not(.eyebrow) { margin-top: 12px; color: var(--muted); font-size: 13px; }
+    .record-value { margin-top: 17px; border-left: 2px solid var(--red); padding-left: 13px; font-size: 11px; }
+    .record-links { display: flex; flex-wrap: wrap; gap: 10px 22px; margin-top: auto; padding-top: 17px; }
+    .record-links a { font-size: 11px; font-weight: 600; }
+    .record-links a:hover { color: var(--red); }
+    .record-bio { margin-top: 30px; padding-top: 19px; border-top: 1px solid var(--line); color: var(--muted); font-size: 11px; }
+    .record-bio strong { color: var(--ink); }
+    .priorities { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 30px 48px; margin-top: 30px; }
+    .priority { border-top: 2px solid var(--ink); padding-top: 16px; }
+    .priority .eyebrow { font-size: 9px; color: var(--red); }
+    .priority h3 { margin-top: 13px; font-size: 21px; font-weight: 600; letter-spacing: -.035em; }
+    .priority p { margin-top: 12px; color: var(--muted); font-size: 13px; }
+    .programme-note { margin-top: 24px; color: var(--muted); font-size: 11px; }
+    .formats-heading { margin-top: 38px; margin-bottom: 19px; font-size: 22px; font-weight: 600; letter-spacing: -.035em; }
+    .programme { background: var(--paper); border-top: 1px solid var(--line); border-bottom: 1px solid var(--line); }
+    .section-top { display: flex; justify-content: space-between; align-items: flex-end; gap: 40px; margin-bottom: 32px; }
+    .section-top .section-intro { max-width: 355px; }
+    .formats { display: grid; grid-template-columns: repeat(3, 1fr); gap: 18px; }
+    .format { display: flex; flex-direction: column; border: 1px solid #d8d8d5; background: var(--white); }
+    .format-art { position: relative; display: flex; align-items: center; justify-content: center; height: 133px; overflow: hidden; border-bottom: 1px solid var(--line); background: #fafaf8; }
+    .format-art svg { width: 190px; height: 100px; }
+    .format-number { position: absolute; top: 14px; left: 17px; color: var(--muted); font-size: 9px; letter-spacing: .12em; }
+    .format-body { display: flex; flex: 1; flex-direction: column; padding: 25px 24px 20px; }
+    .format-body .eyebrow { color: var(--red); font-size: 9px; }
+    .format h3 { margin-top: 9px; font-size: 25px; font-weight: 650; letter-spacing: -.045em; }
+    .format p { margin-top: 13px; color: var(--muted); font-size: 13px; }
+    .format-foot { display: flex; justify-content: space-between; gap: 15px; margin-top: auto; padding-top: 24px; font-size: 10px; font-weight: 600; }
+    .format-foot span:last-child { color: var(--muted); font-weight: 400; }
+    .lab-block { display: grid; grid-template-columns: .8fr 1.4fr; gap: 45px; margin-top: 24px; padding: 34px; background: var(--ink); color: var(--white); }
+    .lab-block .eyebrow { color: #d2d2cf; font-size: 9px; }
+    .lab-block h3 { max-width: 270px; margin-top: 13px; font-size: 29px; font-weight: 500; letter-spacing: -.04em; }
+    .lab-block p { max-width: 290px; margin-top: 13px; color: #c1c1bf; font-size: 12px; }
+    .lab-topics { display: grid; grid-template-columns: 1fr 1fr; align-content: center; gap: 17px 25px; margin: 0; padding: 0; list-style: none; }
+    .lab-topics li { display: flex; align-items: baseline; gap: 11px; font-size: 12px; }
+    .lab-topics span { color: #ef8294; font-size: 10px; font-variant-numeric: tabular-nums; }
+    .lab-details { margin-top: 18px; border-bottom: 1px solid #cfcfcd; font-size: 12px; }
+    .lab-details summary { display: flex; justify-content: space-between; align-items: center; gap: 20px; padding: 12px 0; font-weight: 600; list-style: none; }
+    .lab-details summary::-webkit-details-marker { display: none; }
+    .lab-details summary svg { width: 16px; height: 16px; transition: transform .2s; }
+    .lab-details[open] summary svg { transform: rotate(45deg); }
+    .lab-details p { max-width: 800px; padding: 0 0 18px; color: var(--muted); }
+    .timeline-tabs { display: none; grid-template-columns: repeat(4, 1fr); margin-top: 34px; border: 1px solid var(--line); }
+    .js .timeline-tabs { display: grid; }
+    .timeline-tab { min-width: 0; border: 0; border-right: 1px solid var(--line); border-top: 3px solid transparent; padding: 20px; background: var(--white); color: var(--muted); text-align: left; }
+    .timeline-tab:last-child { border-right: 0; }
+    .timeline-tab[aria-selected="true"] { border-top-color: var(--red); background: var(--paper); color: var(--ink); }
+    .timeline-tab:hover { background: var(--paper); }
+    .timeline-tab .eyebrow { display: block; font-size: 9px; color: var(--muted); }
+    .timeline-tab strong { display: block; margin-top: 7px; font-size: 14px; font-weight: 650; letter-spacing: -.02em; }
+    .timeline-tab[aria-selected="true"] .eyebrow { color: var(--red); }
+    .timeline-panel { border: 1px solid var(--line); margin-top: 20px; padding: 30px; }
+    .js .timeline-panel { border-top: 0; margin-top: 0; }
+    .timeline-panel[hidden] { display: none; }
+    .phase-heading { display: flex; justify-content: space-between; align-items: baseline; gap: 20px; margin-bottom: 22px; }
+    .phase-heading h3 { font-size: 23px; font-weight: 600; letter-spacing: -.035em; }
+    .phase-heading p { color: var(--muted); font-size: 11px; }
+    .timeline-row { display: grid; grid-template-columns: 105px 1.15fr 1fr; gap: 20px; padding-block: 16px; border-top: 1px solid var(--line); font-size: 12px; }
+    .timeline-row .when { color: var(--red); font-size: 11px; font-weight: 600; }
+    .timeline-row .activity { font-weight: 600; }
+    .timeline-row .outcome { color: var(--muted); }
+    .calendar-note { margin-top: 15px; color: var(--muted); font-size: 10px; }
+    .accountability { border-top: 1px solid var(--line); background: var(--paper); }
+    .accountability-layout { display: grid; grid-template-columns: 1fr 1fr; gap: 75px; }
+    .accountability-intro { max-width: 390px; margin-top: 20px; color: var(--muted); font-size: 14px; }
+    .commitments { margin: 0; }
+    .commitment { display: grid; grid-template-columns: 1fr auto; align-items: baseline; gap: 20px; border-bottom: 1px solid #d4d4d1; padding: 17px 0; }
+    .commitment:first-child { border-top: 2px solid var(--ink); }
+    .commitment dt { font-size: 13px; font-weight: 600; }
+    .commitment dd { margin: 0; color: var(--muted); font-size: 10px; text-align: right; }
+    .target-note { margin-top: 22px; border-left: 2px solid var(--red); padding-left: 15px; }
+    .target-note strong { font-size: 11px; }
+    .target-note p { margin-top: 5px; color: var(--muted); font-size: 11px; }
+    .closing { background: var(--red); color: var(--white); }
+    .closing-inner { display: flex; justify-content: space-between; align-items: center; gap: 35px; padding-block: 42px; }
+    .closing h2 { margin-top: 10px; font-size: clamp(28px, 3.3vw, 43px); font-weight: 600; letter-spacing: -.05em; }
+    .closing .eyebrow { font-size: 9px; }
+    .closing-credit { text-align: right; }
+    .closing-credit strong { display: block; font-size: 21px; letter-spacing: -.035em; }
+    .closing-credit span { display: block; margin-top: 4px; font-size: 11px; }
+    .closing-credit p { margin-top: 14px; font-size: 10px; }
+    .footer { padding-block: 24px; }
+    .footer-main { display: flex; flex-wrap: wrap; justify-content: space-between; align-items: center; gap: 20px; }
+    .footer-brand { font-size: 11px; font-weight: 700; }
+    .footer-brand span { color: var(--muted); font-weight: 400; }
+    .footer-actions { display: none; flex-wrap: wrap; gap: 23px; }
+    .js .footer-actions { display: flex; }
+    .footer-action { display: inline-flex; align-items: center; gap: 8px; border: 0; padding: 4px 0; background: none; color: var(--ink); font-size: 10px; text-decoration: none; }
+    .footer-action:hover { text-decoration: underline; }
+    .footer-action svg { width: 13px; height: 13px; }
+    .footer-note { margin-top: 14px; color: var(--muted); font-size: 9px; }
+    .toast { position: fixed; right: 20px; bottom: 20px; left: 20px; z-index: 50; width: fit-content; max-width: calc(100% - 40px); margin-left: auto; border-left: 3px solid var(--red); padding: 15px 20px; background: var(--ink); color: var(--white); font-size: 12px; box-shadow: 0 5px 22px #0002; }
+    .toast:empty { display: none; }
+    @media (min-width: 1500px) { .hero { padding-top: 58px; padding-bottom: 75px; } }
+    @media (max-width: 1050px) {
+      .brand-name { font-size: 16px; }
+      .brand-club { display: none; }
+      .main-nav { gap: 22px; }
+      .hero-layout { gap: 35px; grid-template-columns: 1.3fr 1fr; }
+      h1 { font-size: clamp(56px, 7.2vw, 78px); }
+      .year-card-top { padding: 23px; }
+      .year-breakdown div { padding: 15px 12px; gap: 6px; }
+      .proof-item { padding-inline: 18px; }
+      .manifesto-top { gap: 40px; }
+      .lab-block { gap: 25px; padding: 28px; }
+      .accountability-layout { gap: 40px; }
+    }
+    @media (max-width: 760px) {
+      html { scroll-padding-top: 94px; }
+      .masthead-inner { min-height: 73px; }
+      .brand-name { font-size: 16px; }
+      .brand-club { display: block; font-size: 8px; padding-left: 13px; }
+      .brand { gap: 13px; }
+      .main-nav { flex-wrap: wrap; justify-content: center; gap: 5px 22px; padding-block: 10px; }
+      .js .menu-toggle { display: inline-flex; }
+      .js .main-nav { display: none; position: absolute; top: 100%; right: calc(-1 * var(--gutter)); left: calc(-1 * var(--gutter)); align-items: stretch; flex-direction: column; gap: 0; border-bottom: 1px solid var(--line); padding: 10px var(--gutter) 17px; background: var(--white); }
+      .js .main-nav.is-open { display: flex; }
+      .main-nav .nav-name { border-left: 0; padding-left: 0; }
+      .hero { padding-top: 31px; padding-bottom: 40px; }
+      .hero-meta { gap: 7px; padding-bottom: 28px; }
+      .hero-meta .eyebrow { font-size: 9px; }
+      .hero-meta .term { font-size: 10px; }
+      .hero-layout { grid-template-columns: 1fr; gap: 32px; }
+      h1 { font-size: clamp(42px, 13.5vw, 81px); }
+      .hero-intro { max-width: 460px; margin-top: 22px; font-size: 15px; }
+      .candidate { margin-top: 21px; }
+      .hero-actions { margin-top: 23px; }
+      .year-card { display: grid; grid-template-columns: 1.1fr 1fr; margin-top: 0; }
+      .year-card-top { min-height: 238px; padding: 20px; }
+      .year-number { margin-left: -4px; font-size: 106px; }
+      .year-card-label .eyebrow { font-size: 7px; }
+      .year-marker { font-size: 8px; }
+      .year-card-top h2 { font-size: 21px; }
+      .year-card-top p { font-size: 10px; }
+      .year-breakdown { grid-template-columns: 1fr; border-top: 1px solid var(--line); border-left: 0; }
+      .year-breakdown div { padding: 12px 18px; gap: 13px; }
+      .year-breakdown div:nth-child(odd) { border-right: 0; }
+      .year-breakdown div:not(:last-child) { border-bottom: 1px solid var(--line); }
+      .year-breakdown strong { font-size: 23px; }
+      .proof-inner { grid-template-columns: 1fr; }
+      .proof-item, .proof-item:first-child, .proof-item:last-child { border: 0; padding: 14px 0; }
+      .proof-item + .proof-item { border-top: 1px solid var(--line); }
+      .proof-item strong { font-size: 11px; }
+      .section { padding-block: 48px; }
+      .section-label { margin-bottom: 18px; }
+      .manifesto-top { grid-template-columns: 1fr; gap: 24px; }
+      .section-heading { font-size: 35px; }
+      .manifesto-copy p { font-size: 14px; }
+      .record-stats { margin-block: 24px 28px; }
+      .record-stat { padding: 18px 12px; }
+      .record-stat strong { font-size: 36px; }
+      .record-stat span { font-size: 10px; line-height: 1.5; }
+      .record-grid { grid-template-columns: 1fr; gap: 27px; }
+      .record-entry h3 { font-size: 23px; }
+      .record-entry > p:not(.eyebrow) { font-size: 12px; }
+      .record-bio { margin-top: 25px; }
+      .priorities { grid-template-columns: 1fr; gap: 22px; margin-top: 30px; }
+      .priority { padding-top: 14px; }
+      .priority h3 { margin-top: 8px; font-size: 21px; }
+      .priority p { margin-top: 10px; font-size: 12px; }
+      .formats-heading { margin-top: 30px; font-size: 21px; }
+      .section-top { display: block; margin-bottom: 25px; }
+      .section-top .section-intro { max-width: 440px; margin-top: 18px; font-size: 13px; }
+      .formats { grid-template-columns: 1fr; gap: 15px; }
+      .format { display: grid; grid-template-columns: 125px 1fr; }
+      .format-art { height: 100%; min-height: 200px; border-right: 1px solid var(--line); border-bottom: 0; }
+      .format-art svg { width: 125px; height: 85px; }
+      .format-body { padding: 22px; }
+      .format h3 { font-size: 24px; }
+      .format p { margin-top: 11px; font-size: 12px; }
+      .format-foot { padding-top: 18px; font-size: 9px; }
+      .lab-block { grid-template-columns: 1fr; gap: 25px; padding: 26px; }
+      .lab-block h3 { max-width: none; font-size: 29px; }
+      .lab-block p { max-width: 440px; }
+      .lab-topics { gap: 15px 17px; }
+      .lab-topics li { font-size: 11px; }
+      .timeline-tabs { grid-template-columns: 1fr 1fr; margin-top: 26px; }
+      .timeline-tab { padding: 14px; }
+      .timeline-tab:nth-child(2) { border-right: 0; }
+      .timeline-tab:nth-child(-n+2) { border-bottom: 1px solid var(--line); }
+      .timeline-tab strong { margin-top: 4px; font-size: 12px; }
+      .timeline-tab .eyebrow { font-size: 8px; }
+      .timeline-panel { padding: 22px; }
+      .phase-heading { display: block; margin-bottom: 20px; }
+      .phase-heading h3 { font-size: 22px; }
+      .phase-heading p { margin-top: 6px; font-size: 10px; }
+      .timeline-row { grid-template-columns: 75px 1fr; gap: 4px 15px; font-size: 11px; }
+      .timeline-row .when { grid-row: span 2; font-size: 10px; }
+      .timeline-row .outcome { grid-column: 2; }
+      .accountability-layout { grid-template-columns: 1fr; gap: 30px; }
+      .accountability-intro { max-width: none; margin-top: 15px; font-size: 13px; }
+      .commitment dt { font-size: 12px; }
+      .closing-inner { align-items: flex-start; flex-direction: column; gap: 27px; padding-block: 34px; }
+      .closing h2 { max-width: 430px; font-size: 33px; }
+      .closing-credit { text-align: left; }
+      .closing-credit p { margin-top: 8px; }
+      .footer-main { align-items: flex-start; flex-direction: column; gap: 13px; }
+      .footer-note { line-height: 1.6; }
+      html:not(.js) .masthead-inner { flex-wrap: wrap; justify-content: center; gap: 5px; padding-top: 12px; }
+    }
+    @media (max-width: 390px) {
+      :root { --gutter: 20px; }
+      .brand-club { display: none; }
+      .hero-actions { gap: 15px; }
+      .button { gap: 15px; padding-inline: 15px; font-size: 11px; }
+      .text-link { gap: 8px; font-size: 11px; }
+      .year-card { grid-template-columns: 1fr 1fr; }
+      .year-card-top { padding: 16px; }
+      .year-card-label { gap: 7px; }
+      .year-marker { padding-inline: 4px; }
+      .year-card-top h2 { font-size: 19px; }
+      .year-breakdown div { gap: 10px; padding-inline: 12px; }
+      .year-breakdown span { font-size: 9px; }
+      .record-stat strong { font-size: 30px; }
+      .record-stat span { font-size: 9px; }
+      .format { grid-template-columns: 86px 1fr; }
+      .format-art svg { width: 94px; }
+      .format-body { padding: 20px 17px; }
+      .format-number { left: 12px; }
+      .lab-topics { grid-template-columns: 1fr; }
+      .commitment { gap: 12px; }
+      .commitment dd { max-width: 82px; }
+    }
+    @media (prefers-reduced-motion: reduce) {
+      html { scroll-behavior: auto; }
+      *, *::before, *::after { transition: none !important; }
+    }
+    @media print {
+      @page { size: A4; margin: 15mm; }
+      :root { --gutter: 0px; }
+      html { scroll-padding-top: 0; }
+      body { color: #000; font-size: 10pt; }
+      .wrap { width: 100%; max-width: none; }
+      .masthead { position: static; border-top-width: 3px; }
+      .masthead-inner { min-height: 60px; }
+      .main-nav, .menu-toggle, .hero-actions, .timeline-tabs, .js .timeline-tabs, .footer-actions, .js .footer-actions, .toast, .skip-link { display: none !important; }
+      .hero { padding: 25px 0; }
+      .hero-meta { padding-bottom: 18px; }
+      .hero-layout { grid-template-columns: 1.4fr 1fr; gap: 30px; }
+      h1 { font-size: 45pt; }
+      .hero-intro { margin-top: 18px; font-size: 10pt; }
+      .candidate { margin-top: 18px; }
+      .year-card { display: flex; }
+      .year-card-top { min-height: 200px; border: 1px solid var(--red); background: #fff; color: var(--red); padding: 18px; }
+      .year-card-top::before { display: none; }
+      .year-marker { border-color: var(--red); }
+      .year-number { font-size: 95pt; }
+      .year-card-top h2 { font-size: 17pt; }
+      .year-breakdown { grid-template-columns: 1fr 1fr; border-left: 1px solid var(--line); }
+      .year-breakdown div { padding: 10px; }
+      .year-breakdown strong { font-size: 16pt; }
+      .year-breakdown span { font-size: 7pt; }
+      .proof-bar { background: #fff; }
+      .proof-inner { grid-template-columns: 1fr 1fr 1.2fr; }
+      .proof-item { padding-block: 13px; padding-inline: 12px; }
+      .proof-item strong { font-size: 8pt; }
+      .proof-item p { font-size: 7pt; }
+      .section { padding-block: 27px; }
+      .section-heading { font-size: 27pt; }
+      .section-label { margin-bottom: 15px; }
+      .manifesto-top { grid-template-columns: 1fr 1.2fr; gap: 25px; }
+      .manifesto-copy p { font-size: 9pt; }
+      .record-stats { margin-block: 20px; }
+      .record-stat { padding-block: 14px; }
+      .record-stat strong { font-size: 26pt; }
+      .record-stat span { font-size: 8pt; }
+      .record-grid { grid-template-columns: 1fr 1fr; gap: 20px; }
+      .record-entry h3 { font-size: 16pt; }
+      .record-entry > p:not(.eyebrow) { font-size: 8pt; }
+      .record-value, .record-links a, .record-bio { font-size: 8pt; }
+      .record-bio { margin-top: 20px; }
+      .priorities { grid-template-columns: repeat(2, 1fr); gap: 20px; margin-top: 25px; }
+      .priority { display: block; }
+      .priority h3 { font-size: 14pt; }
+      .priority p { margin-top: 10px; font-size: 8pt; }
+      .programme-note { margin-top: 16px; font-size: 8pt; }
+      .formats-heading { margin-top: 23px; font-size: 15pt; }
+      .programme, .accountability { background: #fff; }
+      .section-top { display: block; margin-bottom: 20px; }
+      .section-top .section-intro { max-width: none; margin-top: 12px; font-size: 9pt; }
+      .formats { grid-template-columns: repeat(3, 1fr); gap: 12px; }
+      .format { display: flex; }
+      .format-art { display: none; }
+      .format-body { padding: 15px; }
+      .format h3 { font-size: 17pt; }
+      .format p { font-size: 8pt; }
+      .format-foot { font-size: 7pt; }
+      .lab-block { grid-template-columns: .8fr 1.4fr; gap: 25px; border: 1px solid var(--line); padding: 20px; background: #fff; color: #000; }
+      .lab-block .eyebrow, .lab-block p { color: #555; }
+      .lab-block h3 { font-size: 20pt; }
+      .lab-topics { grid-template-columns: 1fr 1fr; gap: 12px; }
+      .lab-topics li { font-size: 8pt; }
+      .lab-topics span { color: var(--red); }
+      .lab-details summary { font-size: 9pt; }
+      .lab-details summary svg { display: none; }
+      .lab-details p { font-size: 8pt; }
+      .timeline-panel, .timeline-panel[hidden], .js .timeline-panel { display: block !important; border: 1px solid var(--line); margin-top: 15px; padding: 18px; }
+      .phase-heading { display: flex; margin-bottom: 12px; }
+      .phase-heading h3 { font-size: 15pt; }
+      .timeline-row { grid-template-columns: 75px 1.15fr 1fr; gap: 15px; padding-block: 11px; font-size: 8pt; }
+      .timeline-row .when { grid-row: auto; }
+      .timeline-row .outcome { grid-column: auto; }
+      .accountability-layout { grid-template-columns: 1fr 1fr; gap: 30px; }
+      .accountability-intro { font-size: 9pt; }
+      .commitment { padding-block: 12px; }
+      .commitment dt { font-size: 9pt; }
+      .commitment dd { font-size: 8pt; }
+      .closing { border-block: 2px solid var(--red); background: #fff; color: #000; }
+      .closing-inner { flex-direction: row; align-items: center; padding-block: 23px; }
+      .closing h2 { font-size: 22pt; }
+      .closing-credit { text-align: right; }
+      .footer { padding-top: 15px; }
+      .format, .priority, .record-entry, .record-stats, .lab-block, .timeline-panel, .accountability-layout, .closing, .proof-bar { break-inside: avoid; }
+      h2, h3, .section-label, .section-top { break-after: avoid; }
+    }
+  </style>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="masthead">
+    <div class="wrap masthead-inner">
+      <a class="brand" href="#top" aria-label="CMU-Africa Data Science Club campaign, back to top">
+        <div class="brand-name"><span>Carnegie Mellon</span><span>University Africa</span></div>
+        <div class="brand-club"><span>Data Science Club</span><span class="red">Strategist manifesto</span></div>
+      </a>
+      <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="main-navigation">
+        Menu <svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M3 6h14M3 10h14M3 14h14"/></svg>
+      </button>
+      <nav class="main-nav" id="main-navigation" aria-label="Main navigation">
+        <a href="#track-record">Why me</a>
+        <a href="#programme">The programme</a>
+        <a href="#year">The year ahead</a>
+        <a class="nav-name" href="#accountability">My commitment <span aria-hidden="true">↗</span></a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="hero wrap" id="top" aria-labelledby="hero-heading">
+      <div class="hero-meta">
+        <p class="eyebrow red">Nde Dilan for Data Science Club Strategist</p>
+        <p class="term">22 November 2026 — 22 November 2027</p>
+      </div>
+      <div class="hero-layout">
+        <div>
+          <h1 id="hero-heading"><span>Learn deeply.</span><span>Build together.</span><span class="red">Show the work.</span></h1>
+          <p class="hero-intro">From computational foundations to African impact. I bring community leadership, published research, and product-building experience to a strategy we can deliver together.</p>
+          <div class="candidate">
+            <div class="candidate-monogram" aria-hidden="true">ND</div>
+            <div><strong>Nde Dilan</strong><span>ID: ndilan · Strategist candidate</span><span class="candidate-credentials">MSEAI student · Zindi ambassador · Builder</span></div>
+          </div>
+          <div class="hero-actions">
+            <a class="button" href="#programme">Explore the plan <svg class="arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M5 7h12v12M17 7 5 19"/></svg></a>
+            <a class="text-link" href="#manifesto">Read the manifesto <span aria-hidden="true">↓</span></a>
+          </div>
+        </div>
+        <aside class="year-card" aria-label="Proposed annual programme: twelve core gatherings">
+          <div class="year-card-top">
+            <div class="year-card-label"><p class="eyebrow">Proposed club programme</p><span class="year-marker">2026 / 27</span></div>
+            <div class="year-number">12</div>
+            <div><h2>Core gatherings.</h2><p>In person. Purposeful. Built around doing.</p></div>
+          </div>
+          <div class="year-breakdown">
+            <div><strong>6</strong><span>Technical labs</span></div>
+            <div><strong>3</strong><span>Signature challenges</span></div>
+            <div><strong>2</strong><span>Practitioner clinics</span></div>
+            <div><strong>1</strong><span>Final showcase</span></div>
+          </div>
+        </aside>
+      </div>
+    </section>
+
+    <div class="proof-bar" aria-label="Preparation already underway">
+      <div class="wrap proof-inner">
+        <div class="proof-item">
+          <div class="proof-mark" aria-hidden="true"><svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.5"><path d="m5 10 3 3 7-7"/></svg></div>
+          <div><strong>Community leadership</strong><p>Former GDG on Campus lead, ICT University.</p></div>
+        </div>
+        <div class="proof-item">
+          <div class="proof-mark" aria-hidden="true"><svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.3"><circle cx="7" cy="6" r="2.5"/><path d="M2 16v-2a5 5 0 0 1 10 0v2M13 4a2.5 2.5 0 0 1 0 5M14 11a4 4 0 0 1 4 4v1"/></svg></div>
+          <div><strong>Already working with the club</strong><p>Zindi ambassador and committee collaborator.</p></div>
+        </div>
+        <div class="proof-item">
+          <div class="proof-mark" aria-hidden="true"><svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.3"><rect x="3" y="4" width="14" height="13"/><path d="M6 2v4M14 2v4M3 8h14m-10 4h6"/></svg></div>
+          <div><strong><a href="https://luma.com/b17uczt1" target="_blank" rel="noopener noreferrer">20 November 2026 event <span aria-hidden="true">↗</span></a></strong><p>Turning ideas into shared activities.</p></div>
+        </div>
+      </div>
+    </div>
+
+    <section class="section wrap" id="manifesto" aria-labelledby="manifesto-heading">
+      <div class="section-label eyebrow"><span class="index">01</span> The manifesto</div>
+      <div class="manifesto-top">
+        <h2 class="section-heading" id="manifesto-heading">Strong ideas.<br>A strategy to deliver.</h2>
+        <div class="manifesto-copy">
+          <p>Our club should help us apply CMU's technical depth to difficult, useful problems. I am running for strategist to connect <strong>advanced practice, competition preparation, industry insight, and a creative campus community.</strong></p>
+          <p>Leading a developer community taught me to turn ideas into organised activities. Research taught me to question the evidence. Building Nerala taught me to work through the constraints of shipping a product.</p>
+          <p>I will bring that experience to the president and committee: listening to members, designing a realistic programme, preparing partnership proposals, and reviewing results. We should leave the year with stronger judgement, stronger teams, and work we can explain and defend.</p>
+          <div class="signature"><span class="signature-line" aria-hidden="true"></span><p><strong>Nde Dilan</strong> <span>· <strong>ndilan</strong></span></p></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section track-record" id="track-record" aria-labelledby="record-heading">
+      <div class="wrap">
+        <div class="section-label eyebrow"><span class="index">02</span> Experience behind the plan</div>
+        <div class="section-top">
+          <h2 class="section-heading" id="record-heading">A record of building.<br>Experience I can share.</h2>
+          <p class="section-intro">My journey spans community leadership, low-resource NLP, and a shipped language-learning product. Each brings something practical to the club.</p>
+        </div>
+        <div class="record-stats" aria-label="Community leadership at ICT University">
+          <div class="record-stat"><strong>13</strong><span>Core team members led</span></div>
+          <div class="record-stat"><strong>10+</strong><span>Technical workshops, demos &amp; hackathons</span></div>
+          <div class="record-stat"><strong>250+</strong><span>Students reached at ICT University</span></div>
+        </div>
+        <div class="record-grid">
+          <article class="record-entry">
+            <p class="eyebrow">Community / GDG on Campus</p>
+            <h3>Leadership through shared ownership.</h3>
+            <p>As former GDG on Campus lead at The ICT University, I coordinated a core team delivering technical workshops, cloud demos, and hackathons.</p>
+            <div class="record-value"><strong>For the club:</strong> clear roles, realistic logistics, and room for members to lead their own initiatives.</div>
+            <div class="record-links"><a href="https://www.techwithdilan.dev/community-work" target="_blank" rel="noopener noreferrer">Explore my community work <span aria-hidden="true">↗</span></a></div>
+          </article>
+          <article class="record-entry">
+            <p class="eyebrow">Research / Informatics, 2026</p>
+            <h3>Co-author of LinguoNER.</h3>
+            <p>Published research on named entity recognition in extremely low-resource languages, with a focus on Yambeta. Experience with data scarcity, annotation, and evaluation.</p>
+            <div class="record-value"><strong>For the club:</strong> rigorous experiments and research discussions grounded in African language challenges.</div>
+            <div class="record-links"><a href="https://www.mdpi.com/2227-9709/13/2/31" target="_blank" rel="noopener noreferrer">Read the paper <span aria-hidden="true">↗</span></a></div>
+          </article>
+          <article class="record-entry">
+            <p class="eyebrow">Product / Nerala</p>
+            <h3>From an idea to a shipped app.</h3>
+            <p>Co-founder of Nerala, an African language-learning product available on Google Play and selected among OIF's Top 100 African digital solutions.</p>
+            <div class="record-value"><strong>For the club:</strong> a practical bridge from a research notebook to a usable product, with real engineering constraints.</div>
+            <div class="record-links"><a href="https://play.google.com/store/apps/details?id=com.nerala.app&amp;hl=en" target="_blank" rel="noopener noreferrer">View Nerala on Google Play <span aria-hidden="true">↗</span></a><a href="https://www.techwithdilan.dev/experience" target="_blank" rel="noopener noreferrer">Product journey &amp; recognition <span aria-hidden="true">↗</span></a></div>
+          </article>
+          <article class="record-entry">
+            <p class="eyebrow">Continuity / Zindi &amp; CMU-Africa</p>
+            <h3>Contributing before the election.</h3>
+            <p>Selected as a Zindi ambassador and already working alongside the current Data Science Club committee, including preparations for our November 20 event.</p>
+            <div class="record-value"><strong>For the club:</strong> competition preparation, community connections, and a commitment to following through.</div>
+            <div class="record-links"><a href="https://luma.com/b17uczt1" target="_blank" rel="noopener noreferrer">View the November 20 event <span aria-hidden="true">↗</span></a></div>
+          </article>
+        </div>
+        <p class="record-bio"><strong>Nde Hurich Dilan</strong> · MSEAI student, CMU-Africa · Andrew ID: <strong>ndilan</strong> · <a href="https://www.techwithdilan.dev/" target="_blank" rel="noopener noreferrer">@techwithdilan <span aria-hidden="true">↗</span></a></p>
+      </div>
+    </section>
+
+    <section class="section programme" id="programme" aria-labelledby="programme-heading">
+      <div class="wrap">
+        <div class="section-label eyebrow"><span class="index">03</span> The strategy</div>
+        <div class="section-top">
+          <h2 class="section-heading" id="programme-heading">Four priorities.<br>One coherent programme.</h2>
+          <p class="section-intro">A programme I will develop with the president and committee, connecting technical depth to practice, feedback, and work members can show.</p>
+        </div>
+        <div class="priorities" aria-label="Four strategic priorities">
+          <article class="priority"><p class="eyebrow">01 / Advanced practice</p><h3>Go deeper. Build further.</h3><p>Peer- and faculty-led technical teardowns on difficult problems: low-resource NLP, efficient inference, data drift, and research-to-product pipelines.</p></article>
+          <article class="priority"><p class="eyebrow">02 / Competitive preparation</p><h3>Build competition pods.</h3><p>Small, opt-in teams pairing experienced competitors with first-time participants. Review validation, compare experiments, and dissect published solutions after challenges.</p></article>
+          <article class="priority"><p class="eyebrow">03 / Industry bridges</p><h3>Bring the trade-offs into the room.</h3><p>Invite practitioners from health, fintech, telecom, and logistics to unpack approved cases, production failures, and decisions about data, cost, and deployment.</p></article>
+          <article class="priority"><p class="eyebrow">04 / Creative community</p><h3>Make room for different strengths.</h3><p>Use visual storytelling, data forensics, and live sprints to connect analysts, researchers, engineers, and communicators through shared challenges.</p></article>
+        </div>
+        <p class="programme-note">The plan centres on 12 core gatherings. Competition pods can meet between events as members choose. I will seek partner support for a Data Sprint edition built around an approved industry problem.</p>
+        <h3 class="formats-heading">Three ways to put the strategy into practice.</h3>
+        <div class="formats">
+          <article class="format">
+            <div class="format-art" aria-hidden="true"><span class="format-number">01 / VISUALISE</span><svg viewBox="0 0 220 110" fill="none"><path d="M35 87h155M35 87V25" stroke="#b9b9b5"/><path d="M48 72 73 64l26 6 27-25 23 8 27-28" stroke="#c41230" stroke-width="2.5"/><path d="M48 82 73 75l26 3 27-16 23 3 27-19" stroke="#b9b9b5" stroke-width="1.5"/><circle cx="126" cy="45" r="4" fill="#c41230"/><circle cx="176" cy="25" r="4" fill="#c41230"/><path d="M126 49v38M176 29v58" stroke="#c41230" stroke-dasharray="2 4" stroke-opacity=".4"/></svg></div>
+            <div class="format-body"><p class="eyebrow">Data as art. Evidence as story.</p><h3>DataCanvas</h3><p>Turn African public data into one compelling visual story. Choose your tools, explain your methods, and exhibit work that helps people make sense of an important question.</p><div class="format-foot"><span>Creativity + rigour</span><span>7–10 days</span></div></div>
+          </article>
+          <article class="format">
+            <div class="format-art" aria-hidden="true"><span class="format-number">02 / INVESTIGATE</span><svg viewBox="0 0 220 110" fill="none"><rect x="44" y="27" width="113" height="63" stroke="#b9b9b5"/><path d="M44 43h113M44 59h113M44 75h113M66 27v63M98 27v63M129 27v63" stroke="#d4d4d0"/><rect x="98" y="43" width="31" height="16" fill="#c41230"/><circle cx="148" cy="47" r="25" stroke="#171717" stroke-width="2"/><path d="m166 65 20 20" stroke="#171717" stroke-width="3"/><path d="m143 42 10 10m0-10-10 10" stroke="#c41230" stroke-width="2"/></svg></div>
+            <div class="format-body"><p class="eyebrow">Find the signal. Defend the answer.</p><h3>Case X</h3><p>A data forensics challenge with planted anomalies and hidden signals. Build statistical tests, trace the evidence, and explain what happened and what to do next.</p><div class="format-foot"><span>Evidence + judgement</span><span>2 hours</span></div></div>
+          </article>
+          <article class="format">
+            <div class="format-art" aria-hidden="true"><span class="format-number">03 / EXPERIMENT</span><svg viewBox="0 0 220 110" fill="none"><path d="M43 85h134" stroke="#b9b9b5"/><path d="M51 85V66h18v19M82 85V52h18v33M113 85V35h18v50" fill="#e2e2de"/><path d="M144 85V20h18v65" fill="#c41230"/><path d="m57 45 32-14 31 5 32-28" stroke="#171717" stroke-width="1.5"/><path d="m142 8h10v10" stroke="#171717" stroke-width="1.5"/></svg></div>
+            <div class="format-body"><p class="eyebrow">Build. Test. Defend.</p><h3>Data Sprint</h3><p>Four focused hours, a shared dataset, and a practical problem. Build a validated baseline, improve your pipeline, and finish with a two-minute pitch.</p><div class="format-foot"><span>Speed + sound methods</span><span>4 hours</span></div></div>
+          </article>
+        </div>
+        <div class="lab-block">
+          <div><p class="eyebrow">Six technical labs</p><h3>From research<br>to working systems.</h3><p>Proposed topics, refined with members and facilitators. Every lab ends with an experiment, benchmark, or reproducible implementation.</p></div>
+          <ol class="lab-topics">
+            <li><span>01</span> Data drift &amp; reliable evaluation</li><li><span>02</span> Low-resource NLP &amp; speech</li><li><span>03</span> Causal inference &amp; uncertainty</li><li><span>04</span> Efficient LLM tuning &amp; quantization</li><li><span>05</span> Research-to-product pipelines</li><li><span>06</span> Graph learning &amp; relational data</li>
+          </ol>
+        </div>
+        <details class="lab-details"><summary>How will we make advanced sessions useful and accessible?<svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.4" aria-hidden="true"><path d="M10 3v14M3 10h14"/></svg></summary><p>Preparation notes and starter materials help members arrive ready. Each lab centres on a specific problem and its trade-offs, with substantial hands-on work and a review of the evidence. Extension tasks support experienced members, while peer support and comparable compute limits keep participation practical. Practitioner cases can use public, synthetic, or approved company data.</p></details>
+      </div>
+    </section>
+
+    <section class="section wrap" id="year" aria-labelledby="year-heading">
+      <div class="section-label eyebrow"><span class="index">04</span> The year ahead</div>
+      <div class="section-top"><h2 class="section-heading" id="year-heading">A plan that respects<br>our academic year.</h2><p class="section-intro">A roadmap to shape with the president and committee: concentrated activity during teaching months, a lighter summer, and clear milestones.</p></div>
+      <div class="timeline-tabs" role="tablist" aria-label="Explore the four phases of the year">
+        <button class="timeline-tab" id="tab-launch" type="button" role="tab" aria-selected="true" aria-controls="phase-launch" tabindex="0"><span class="eyebrow">Nov–Dec 2026</span><strong>01 / Listen &amp; launch</strong></button>
+        <button class="timeline-tab" id="tab-learn" type="button" role="tab" aria-selected="false" aria-controls="phase-learn" tabindex="-1"><span class="eyebrow">Jan–Apr 2027</span><strong>02 / Learn &amp; compete</strong></button>
+        <button class="timeline-tab" id="tab-connect" type="button" role="tab" aria-selected="false" aria-controls="phase-connect" tabindex="-1"><span class="eyebrow">May–Aug 2027</span><strong>03 / Reflect &amp; connect</strong></button>
+        <button class="timeline-tab" id="tab-build" type="button" role="tab" aria-selected="false" aria-controls="phase-build" tabindex="-1"><span class="eyebrow">Sep–Nov 2027</span><strong>04 / Build &amp; share</strong></button>
+      </div>
+      <div class="timeline-panel" id="phase-launch" role="tabpanel" aria-labelledby="tab-launch" tabindex="0">
+        <div class="phase-heading"><h3>Start by listening. Then commit.</h3><p>22 November–December 2026</p></div>
+        <div class="timeline-row"><span class="when">First week</span><span class="activity">Agree priorities with the president and committee</span><span class="outcome">Review resources, partnerships, and lessons.</span></div>
+        <div class="timeline-row"><span class="when">First 2 weeks</span><span class="activity">Listen to members and non-attendees</span><span class="outcome">A short survey on topics, timing, and barriers.</span></div>
+        <div class="timeline-row"><span class="when">First 30 days</span><span class="activity">Present a costed programme and partnership briefs</span><span class="outcome">Proposed dates, clear owners, and specific requests for support.</span></div>
+      </div>
+      <div class="timeline-panel" id="phase-learn" role="tabpanel" aria-labelledby="tab-learn" tabindex="0">
+        <div class="phase-heading"><h3>Learn it. Apply it. Discuss the result.</h3><p>7 core gatherings · January–April 2027</p></div>
+        <div class="timeline-row"><span class="when">January</span><span class="activity">Lab 1 · Data drift &amp; reliable evaluation</span><span class="outcome">A robust baseline; form opt-in competition pods.</span></div>
+        <div class="timeline-row"><span class="when">February</span><span class="activity">Lab 2 · Low-resource NLP + DataCanvas</span><span class="outcome">A language experiment and a visual story.</span></div>
+        <div class="timeline-row"><span class="when">March</span><span class="activity">Lab 3 · Causality + Practitioner Clinic 1</span><span class="outcome">Clear assumptions and professional feedback.</span></div>
+        <div class="timeline-row"><span class="when">April</span><span class="activity">Lab 4 · Efficient LLMs + Data Sprint</span><span class="outcome">Compare quality, memory, and latency; practise rapid delivery.</span></div>
+      </div>
+      <div class="timeline-panel" id="phase-connect" role="tabpanel" aria-labelledby="tab-connect" tabindex="0">
+        <div class="phase-heading"><h3>Reflect, stay connected, welcome others.</h3><p>1 core gathering · May–August 2027</p></div>
+        <div class="timeline-row"><span class="when">May</span><span class="activity">Review the work and publish a midterm update</span><span class="outcome">Stronger portfolios and lessons for the second half.</span></div>
+        <div class="timeline-row"><span class="when">June–July</span><span class="activity">Optional remote peer reviews</span><span class="outcome">Light-touch connection during internships.</span></div>
+        <div class="timeline-row"><span class="when">Late August</span><span class="activity">Lab 5 · Research-to-product pipelines</span><span class="outcome">A reproducible model-to-API workflow; welcome new members.</span></div>
+      </div>
+      <div class="timeline-panel" id="phase-build" role="tabpanel" aria-labelledby="tab-build" tabindex="0">
+        <div class="phase-heading"><h3>Finish with work we can stand behind.</h3><p>4 core gatherings · September–22 November 2027</p></div>
+        <div class="timeline-row"><span class="when">September</span><span class="activity">Lab 6 · Graph learning + Case X</span><span class="outcome">A relational-data experiment and a forensic diagnosis.</span></div>
+        <div class="timeline-row"><span class="when">October</span><span class="activity">Practitioner Clinic 2 + project programme</span><span class="outcome">Start a five-week cycle of scoped team projects.</span></div>
+        <div class="timeline-row"><span class="when">November</span><span class="activity">Final showcase, report, and handover</span><span class="outcome">Present results and equip the next committee.</span></div>
+      </div>
+      <p class="calendar-note">Proposed programme, to be agreed with the committee and aligned with resources, assessments, and room availability. External competition dates will be added once confirmed. <a href="https://africa.engineering.cmu.edu/academics/academic-calendar.html" target="_blank" rel="noopener noreferrer">CMU-Africa academic calendar <span aria-hidden="true">↗</span></a></p>
+    </section>
+
+    <section class="section accountability" id="accountability" aria-labelledby="accountability-heading">
+      <div class="wrap">
+        <div class="section-label eyebrow"><span class="index">05</span> My commitment</div>
+        <div class="accountability-layout">
+          <div><h2 class="section-heading" id="accountability-heading">Clear commitments.<br>Visible follow-through.</h2><p class="accountability-intro">I will help the committee review repeat participation, completed work, mentor feedback, and resource needs, then use that evidence to improve the programme.</p></div>
+          <div>
+            <dl class="commitments">
+              <div class="commitment"><dt>Present a programme and partnership briefs</dt><dd>Within the first 30 days</dd></div>
+              <div class="commitment"><dt>Propose 12 core gatherings</dt><dd>Including 6 technical labs</dd></div>
+              <div class="commitment"><dt>Review outcomes with the committee</dt><dd>Monthly</dd></div>
+              <div class="commitment"><dt>Document strategy and lessons</dt><dd>By 22 November 2027</dd></div>
+            </dl>
+            <div class="target-note"><strong>Targets to develop with the committee: 3 project teams · 2 external contributions.</strong><p>Projects depend on member participation and reviewer capacity. External contributions may include a practitioner session, mentorship, a problem brief, or sponsorship.</p></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="closing" aria-labelledby="closing-heading">
+      <div class="wrap closing-inner">
+        <div><p class="eyebrow">From computational foundations to African impact</p><h2 id="closing-heading">A clear strategy. Work we can show.</h2></div>
+        <div class="closing-credit"><strong>Nde Dilan</strong><span>Andrew Id: <strong>ndilan</strong></span><p>For Data Science Club Strategist · 2026–2027</p></div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer wrap">
+    <div class="footer-main">
+      <p class="footer-brand">Learn deeply. Build together. Show the work. <span>— Nde Dilan</span></p>
+      <div class="footer-actions">
+        <button class="footer-action" id="print-page" type="button"><svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.4" aria-hidden="true"><path d="M5 7V2h10v5M5 14H2V7h16v7h-3M5 11h10v7H5z"/></svg>Print / save PDF</button>
+        <button class="footer-action" id="share-page" type="button"><svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.4" aria-hidden="true"><circle cx="5" cy="10" r="2.5"/><circle cx="15" cy="4" r="2.5"/><circle cx="15" cy="16" r="2.5"/><path d="m7 9 6-4M7 11l6 4"/></svg>Share this plan</button>
+        <a class="footer-action" href="#top">Back to top <span aria-hidden="true">↑</span></a>
+      </div>
+    </div>
+    <p class="footer-note">Independent student campaign for the CMU-Africa Data Science Club strategist position. Term: 22 November 2026–22 November 2027.</p>
+  </footer>
+  <div class="toast" id="status-message" role="status" aria-live="polite" aria-atomic="true"></div>
+
+  <script>
+    (() => {
+      'use strict';
+      document.documentElement.classList.add('js');
+
+      const menuButton = document.querySelector('.menu-toggle');
+      const navigation = document.querySelector('.main-nav');
+      const setMenu = (open) => {
+        menuButton.setAttribute('aria-expanded', String(open));
+        navigation.classList.toggle('is-open', open);
+      };
+      menuButton.addEventListener('click', () => setMenu(menuButton.getAttribute('aria-expanded') !== 'true'));
+      navigation.querySelectorAll('a').forEach((link) => link.addEventListener('click', () => setMenu(false)));
+      document.addEventListener('keydown', (event) => {
+        if (event.key === 'Escape' && menuButton.getAttribute('aria-expanded') === 'true') {
+          setMenu(false);
+          menuButton.focus();
+        }
+      });
+      document.addEventListener('click', (event) => {
+        if (!event.target.closest('.masthead')) setMenu(false);
+      });
+      window.matchMedia('(max-width: 760px)').addEventListener('change', () => setMenu(false));
+
+      const tabs = Array.from(document.querySelectorAll('[role="tab"]'));
+      const selectTab = (selectedTab, focus = false) => {
+        tabs.forEach((tab) => {
+          const active = tab === selectedTab;
+          tab.setAttribute('aria-selected', String(active));
+          tab.tabIndex = active ? 0 : -1;
+          document.getElementById(tab.getAttribute('aria-controls')).hidden = !active;
+        });
+        if (focus) selectedTab.focus();
+      };
+      tabs.forEach((tab, index) => {
+        tab.addEventListener('click', () => selectTab(tab));
+        tab.addEventListener('keydown', (event) => {
+          let next;
+          if (event.key === 'ArrowRight' || event.key === 'ArrowDown') next = (index + 1) % tabs.length;
+          if (event.key === 'ArrowLeft' || event.key === 'ArrowUp') next = (index - 1 + tabs.length) % tabs.length;
+          if (event.key === 'Home') next = 0;
+          if (event.key === 'End') next = tabs.length - 1;
+          if (next !== undefined) {
+            event.preventDefault();
+            selectTab(tabs[next], true);
+          }
+        });
+      });
+      selectTab(tabs[0]);
+
+      if ('IntersectionObserver' in window) {
+        const sectionLinks = Array.from(navigation.querySelectorAll('a'));
+        const observer = new IntersectionObserver((entries) => {
+          entries.forEach((entry) => {
+            if (!entry.isIntersecting) return;
+            sectionLinks.forEach((link) => {
+              if (link.getAttribute('href') === '#' + entry.target.id) link.setAttribute('aria-current', 'location');
+              else link.removeAttribute('aria-current');
+            });
+          });
+        }, { rootMargin: '-15% 0px -60% 0px', threshold: 0 });
+        sectionLinks.forEach((link) => observer.observe(document.querySelector(link.getAttribute('href'))));
+      }
+
+      let detailStates = [];
+      window.addEventListener('beforeprint', () => {
+        detailStates = Array.from(document.querySelectorAll('details')).map((detail) => ({ detail, open: detail.open }));
+        detailStates.forEach(({ detail }) => { detail.open = true; });
+      });
+      window.addEventListener('afterprint', () => detailStates.forEach(({ detail, open }) => { detail.open = open; }));
+      document.getElementById('print-page').addEventListener('click', () => window.print());
+
+      const status = document.getElementById('status-message');
+      let statusTimeout;
+      const announce = (message) => {
+        window.clearTimeout(statusTimeout);
+        status.textContent = message;
+        statusTimeout = window.setTimeout(() => { status.textContent = ''; }, 6000);
+      };
+      document.getElementById('share-page').addEventListener('click', async () => {
+        const title = 'Nde Dilan — Data Science Club Strategist Manifesto';
+        const localFile = window.location.protocol === 'file:';
+        const shareText = 'Learn deeply. Build together. Show the work.\n\n' +
+          "Nde Dilan (ndilan) for CMU-Africa Data Science Club Strategist, 2026–2027.\n\n" +
+          'Community leadership, published NLP research, and product-building experience. Four priorities: advanced practice, competition pods, industry bridges, and creative challenges.\n\n' +
+          'Proposed club programme: 12 core gatherings, with 6 technical labs, 3 signature challenges, 2 practitioner clinics, and 1 final showcase, developed with the president and committee.\n\n' +
+          document.querySelector('.manifesto-copy').innerText.replace(/\n{3,}/g, '\n\n');
+        const data = localFile ? { title, text: shareText } : { title, text: 'Learn deeply. Build together. Show the work.', url: window.location.href.split('#')[0] };
+        try {
+          if (navigator.share) {
+            await navigator.share(data);
+            return;
+          }
+          const content = localFile ? shareText : data.url;
+          if (navigator.clipboard && navigator.clipboard.writeText) {
+            await navigator.clipboard.writeText(content);
+            announce(localFile ? 'Manifesto copied. Ready to share.' : 'Page link copied. Ready to share.');
+          } else {
+            window.prompt(localFile ? 'Copy the manifesto to share:' : 'Copy this page link to share:', content);
+          }
+        } catch (error) {
+          if (error.name === 'AbortError') return;
+          window.prompt(localFile ? 'Copy the manifesto to share:' : 'Copy this page link to share:', localFile ? shareText : data.url);
+        }
+      });
+    })();
+  </script>
+</body>
+</html>
